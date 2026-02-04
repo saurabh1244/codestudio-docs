@@ -18,15 +18,7 @@ Since this project allows users to write and run Python code in the browser, han
 ## ⚙️ Execution Flow Chart
 Here is how the code travels from the user's browser to the server and back:
 
-```mermaid
-graph TD
-    User([User]) -->|Types Python Code| Frontend[React Frontend]
-    Frontend -- "State (Zustand)" --> Frontend
-    Frontend -->|Clicks Run| API[Backend API]
-    API -->|Sends Script| Piston[Piston Engine (Sandbox)]
-    API -->|JSON Response| Frontend
-    Frontend -->|Displays Output| User
-```
+
 
 ---
 
